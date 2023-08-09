@@ -9,10 +9,11 @@ Bem-vindo ao GeekBlog, um projeto de blog de notícias voltado para a cultura ge
 
 ## Paleta de Cores
 
+- **Fundo Claro:** #F4F4F4
+- **Texto Escuro:** #333333
 - **Azul Espacial:** #0B3D91
 - **Verde Nerd:** #00A859
 - **Vermelho Heroico:** #FF4D00
-- **Preto Galáctico:** #000000
 
 ## Contribua
 

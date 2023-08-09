@@ -1,6 +1,6 @@
-# GeekBlog - Plataforma de Notícias Geek
+# GeekInsider - Plataforma de Notícias Geek
 
-Bem-vindo ao GeekBlog, um projeto de blog de notícias voltado para a cultura geek, desenvolvido como parte das aulas de Programação Web.
+Bem-vindo ao GeekInsider, um projeto de blog de notícias voltado para a cultura geek, desenvolvido como parte das aulas de Programação Web.
 
 ## Tecnologias Utilizadas
 
@@ -22,4 +22,4 @@ Fique à vontade para contribuir com melhorias, novos recursos e correções de 
 ## Contato
 - Ainda sem 
 
-Prepare-se para embarcar em uma jornada emocionante no mundo do GeekBlog. Aproveite a leitura e que a força (geek) esteja com você!
+Prepare-se para embarcar em uma jornada emocionante no mundo do GeekInsider. Aproveite a leitura e que a força (geek) esteja com você!

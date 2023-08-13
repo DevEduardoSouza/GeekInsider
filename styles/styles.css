@@ -1,0 +1,37 @@
+/*::::::::::-> Configurações gerais <-::::::::::*/
+
+/* Váriaveis de estilização do projeto */
+:root{
+  --border-radius-default: 1rem;
+  --padding-default: 1rem;
+  --main-color: #202024;
+  --bg-color: #16161a;
+  --title-color: #f8f8fb;
+  --styled-color: #fd973d;
+  --font-main: 'Lato', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+}
+
+body{
+  width: 100%;
+  background-color: var(--bg-color);  
+}
+
+a{
+  text-decoration: none;
+}
+
+.conteiner {
+  display: flex;
+  justify-content: space-between;
+  width: 1325px;
+  /* width: 90%; */
+}
+
+/*::::::::::-> Estilos do Header <-::::::::::*/

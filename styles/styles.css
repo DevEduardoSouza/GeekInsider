@@ -7,7 +7,7 @@
   --main-color: #202024;
   --bg-color: #16161a;
   --title-color: #f8f8fb;
-  --styled-color: #fd973d;
+  --styled-color: #f3b410;
   --font-main: 'Lato', sans-serif;
 }
 
@@ -21,17 +21,95 @@
 body{
   width: 100%;
   background-color: var(--bg-color);  
+  
 }
 
 a{
   text-decoration: none;
+  color: var(--title-color);
 }
 
-.conteiner {
+button{
+  background: none;
+  border: none;
+}
+
+.container {
   display: flex;
   justify-content: space-between;
   width: 1325px;
-  /* width: 90%; */
+  width: 90%;
 }
 
+.active{
+  color: var(--styled-color);
+}
+
+.hide{
+  display: none;
+}
 /*::::::::::-> Estilos do Header <-::::::::::*/
+.container-header{
+  width: 100%;
+  background-color: var(--main-color);
+}
+header{
+  border: 1px solid red;
+  height: 100px;
+  margin: auto;
+  align-items: center;
+  min-height: 100px;
+
+}
+header .logo img{
+  width: 80px;
+  cursor: pointer;
+}
+header nav{
+  display: flex;
+  gap: 3rem;
+}
+header ul{
+  display: flex;
+  gap: 1rem;
+}
+header ul.navbar{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header ul.social-media{
+  font-size: 1rem;
+}
+header ul li{
+  list-style: none;
+}
+header ul.navbar li a{
+  padding: .5rem;
+}
+header ul li a:hover{
+  color: var(--styled-color);
+}
+
+header .btn-hamburger{
+  display: none;
+}
+header .btn-hamburger button{
+  color: var(--title-color);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: .8s;
+} 
+header .btn-hamburger button:hover{
+  color: #f3b410;
+}
+
+
+/*::::::::::-> Responsiviade <-::::::::::*/
+@media (max-width: 900px){
+  header nav{
+    display: none;
+  }
+  header .btn-hamburger{
+    display: block;
+  }
+}

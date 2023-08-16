@@ -5,11 +5,15 @@ const html = {
   getElements(element) {
     return document.querySelectorAll(element);
   },
+  createElement(element){
+    return document.createElement(element);
+  },
+  addClass(element, nameClass){
+    return element.classList.add(nameClass);
+  }
 }
 
-
 /*::::::::::-> Add o active <-::::::::::*/
-
 const navbarBtnsCategory = {
   getCategories() {
    return html.getElements('.navbar li');
@@ -30,12 +34,12 @@ console.log(
 )
 
 /*::::::::::-> Função do menu para add e remover navbar <-::::::::::*/
-
 const handleMenu = {
+
   getButtonHamburger() {
     return html.getElement('.btn-hamburger button');
   },
-  createListeners(){
+  createListeners() {
     const btn = this.getButtonHamburger();
     btn.addEventListener('click', () => {
       const navbar = html.getElement('nav');

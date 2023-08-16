@@ -28,3 +28,19 @@ const navbarBtnsCategory = {
 console.log(
   navbarBtnsCategory.createListeners()
 )
+
+/*::::::::::-> Função do menu para add e remover navbar <-::::::::::*/
+
+const handleMenu = {
+  getButtonHamburger() {
+    return html.getElement('.btn-hamburger button');
+  },
+  createListeners(){
+    const btn = this.getButtonHamburger();
+    btn.addEventListener('click', () => {
+      const navbar = html.getElement('nav');
+      navbar.classList.toggle('hide');
+    });
+  }
+};
+handleMenu.createListeners();

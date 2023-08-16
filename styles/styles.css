@@ -9,6 +9,8 @@
   --title-color: #f8f8fb;
   --styled-color: #f3b410;
   --font-main: 'Lato', sans-serif;
+  --theme-light: #f8f8fb;
+  --theme-light-bg: #e4e5f1;
 }
 
 *{
@@ -46,7 +48,7 @@ button{
 }
 
 .hide{
-  display: none;
+  display: flex;
 }
 /*::::::::::-> Estilos do Header <-::::::::::*/
 .container-header{
@@ -81,13 +83,14 @@ header ul.navbar i{
   display: none;
 }
 header ul.social-media{
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 header ul li{
   list-style: none;
 }
 header ul.navbar li a{
   padding: .5rem;
+  font-size: 1.2rem;
 }
 header ul li a:hover{
   color: var(--styled-color);
@@ -111,9 +114,38 @@ header .btn-hamburger button:active{
   opacity: .7;
 }
 
+/*::::::::::-> Estilos de mundança de tema  <-::::::::::*/
+.container-change-theme input[type="checkbox"] {
+  display: none;
+}
+.container-change-theme .bi {
+  cursor: pointer;
+  color: var(--title-color);
+  font-size: 1.2rem;
+}
+.bi-moon {
+  display: none;
+}
+
+.light{
+  background-color: var(--theme-light-bg);
+ }
+.light .container-header {
+  background-color:  var(--theme-light);
+}
+.light .container-header header a{
+  color: var(--bg-color);
+}
+.light .bi-sun {
+  display: none;
+}
+.light .bi-moon {
+  display: block;
+  color: var(--bg-color);
+}
 
 /*::::::::::-> Responsiviade <-::::::::::*/
-@media (max-width: 900px){
+@media (max-width: 1100px){
   header .btn-hamburger{
     display: block;
   }
@@ -136,7 +168,7 @@ header .btn-hamburger button:active{
     width: 80%;
     max-width: 240px;
     
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 0;
   }

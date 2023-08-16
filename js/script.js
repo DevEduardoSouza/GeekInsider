@@ -27,11 +27,7 @@ const navbarBtnsCategory = {
         })
     });
   }
-  
 }
-console.log(
-  navbarBtnsCategory.createListeners()
-)
 
 /*::::::::::-> Função do menu para add e remover navbar <-::::::::::*/
 const handleMenu = {
@@ -48,3 +44,37 @@ const handleMenu = {
   }
 };
 handleMenu.createListeners();
+
+
+
+/*::::::::::-> Mundar tema <-::::::::::*/
+const toggleTheme = {
+  toggleLightModel(){
+    document.body.classList.toggle('light');
+  },
+  loadThemeLocalStorage(){
+    const lightMode = localStorage.getItem('light');
+    if (lightMode) {
+      this.toggleLightModel();
+    }
+  },
+  buttonChangeTheme(){
+    const btnChangeTheme = html.getElement('#change-theme');
+    btnChangeTheme.addEventListener('change', (e)=>{
+      this.toggleLightModel();
+      
+      // Salvar ou remover light mode
+      localStorage.removeItem('light');
+    
+      if(document.body.classList.contains('light')){
+        localStorage.setItem('light', 1);
+      }
+    });
+  }
+}
+
+function init() {
+  toggleTheme.loadThemeLocalStorage();
+  toggleTheme.buttonChangeTheme();
+}
+init();

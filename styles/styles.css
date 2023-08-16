@@ -102,14 +102,58 @@ header .btn-hamburger button{
 header .btn-hamburger button:hover{
   color: #f3b410;
 }
+header .btn-hamburger button:active{
+  opacity: .7;
+}
 
 
 /*::::::::::-> Responsiviade <-::::::::::*/
 @media (max-width: 900px){
-  header nav{
-    display: none;
-  }
   header .btn-hamburger{
     display: block;
   }
+
+  /* Modificando o menu para mmenu mobile */
+  .container-header{
+    position: relative;
+  }
+ 
+  header nav{
+    background-color: var(--main-color);
+    box-shadow: 2px 2px 10px black;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    min-height: 100vh;
+    width: 80%;
+    max-width: 200px;
+    
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header nav ul{
+    flex-direction: column;
+  }
+
+  header nav ul.navbar{
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  header nav ul.social-media{
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 1rem;
+    left: 20%;
+    right: 20%;
+  }
+  
+  header nav ul.social-media li{
+    flex: 1;
+  }
+  /* Finalizando o menu mobile*/
+
 }

@@ -9,6 +9,8 @@
   --title-color: #f8f8fb;
   --styled-color: #f3b410;
   --font-main: 'Lato', sans-serif;
+  --theme-light: #f8f8fb;
+  --theme-light-bg: #e4e5f1;
 }
 
 *{
@@ -46,7 +48,7 @@ button{
 }
 
 .hide{
-  display: none;
+  display: flex;
 }
 /*::::::::::-> Estilos do Header <-::::::::::*/
 .container-header{
@@ -54,7 +56,7 @@ button{
   background-color: var(--main-color);
 }
 header{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 100px;
   margin: auto;
   align-items: center;
@@ -77,19 +79,25 @@ header ul.navbar{
   text-transform: uppercase;
   font-weight: bold;
 }
+header ul.navbar i{
+  display: none;
+}
 header ul.social-media{
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 header ul li{
   list-style: none;
 }
 header ul.navbar li a{
   padding: .5rem;
+  font-size: 1.2rem;
 }
 header ul li a:hover{
   color: var(--styled-color);
 }
-
+header ul li:hover{
+  color: var(--styled-color);
+}
 header .btn-hamburger{
   display: none;
 }
@@ -106,20 +114,50 @@ header .btn-hamburger button:active{
   opacity: .7;
 }
 
+/*::::::::::-> Estilos de mundança de tema  <-::::::::::*/
+.container-change-theme input[type="checkbox"] {
+  display: none;
+}
+.container-change-theme .bi {
+  cursor: pointer;
+  color: var(--title-color);
+  font-size: 1.2rem;
+}
+.bi-moon {
+  display: none;
+}
+
+.light{
+  background-color: var(--theme-light-bg);
+ }
+.light .container-header {
+  background-color:  var(--theme-light);
+}
+.light .container-header header a{
+  color: var(--bg-color);
+}
+.light .bi-sun {
+  display: none;
+}
+.light .bi-moon {
+  display: block;
+  color: var(--bg-color);
+}
 
 /*::::::::::-> Responsiviade <-::::::::::*/
-@media (max-width: 900px){
+@media (max-width: 1100px){
   header .btn-hamburger{
     display: block;
   }
 
-  /* Modificando o menu para mmenu mobile */
+  /* Modificando o menu para menu mobile */
+
   .container-header{
     position: relative;
   }
- 
+
   header nav{
-    background-color: var(--main-color);
+    background-color: var(--bg-color);
     box-shadow: 2px 2px 10px black;
 
     position: fixed;
@@ -128,10 +166,11 @@ header .btn-hamburger button:active{
 
     min-height: 100vh;
     width: 80%;
-    max-width: 200px;
+    max-width: 240px;
     
-    display: flex;
+    display: none;
     flex-direction: column;
+    gap: 0;
   }
   
   header nav ul{
@@ -139,7 +178,23 @@ header .btn-hamburger button:active{
   }
 
   header nav ul.navbar{
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem;
+  }
+
+  header nav ul.navbar li a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: .4rem;
+  }
+
+  header nav ul.navbar li a:hover{
+    background-color: #25282F;
+    color: var(--styled-color);
+  }
+
+  header ul.navbar i{
+    display: inline;
   }
 
   header nav ul.social-media{
@@ -150,7 +205,7 @@ header .btn-hamburger button:active{
     left: 20%;
     right: 20%;
   }
-  
+
   header nav ul.social-media li{
     flex: 1;
   }

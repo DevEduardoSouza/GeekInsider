@@ -2,6 +2,9 @@
 
 Bem-vindo ao GeekInsider, um projeto de blog de notícias voltado para a cultura geek, desenvolvido como parte das aulas de Programação Web.
 
+![Imagem](imgs/img-projeto.png)
+- link do site em desemvolvimento: <a href="https://geek-insider.netlify.app">Aqui</a>
+
 ## Tecnologias Utilizadas
 
 - **Front-End Inicial:** HTML, CSS e JavaScript são as linguagens iniciais para construir a estrutura visual do GeekBlog.

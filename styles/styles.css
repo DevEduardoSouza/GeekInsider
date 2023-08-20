@@ -38,7 +38,7 @@ ul, li{
 .container {
   display: flex;
   justify-content: space-between;
-  width: 1325px;
+  max-width: 1250px;
   width: 90%;
 }
 .active{
@@ -71,7 +71,7 @@ ul, li{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-size: .8rem;
+  font-size: .7rem;
 }
 /*END About site */
 
@@ -81,11 +81,11 @@ header{
   height: 100px;
   margin: auto;
   align-items: center;
-  min-height: 100px;
+  height: 70px;
 
 }
 header .logo img{
-  width: 80px;
+  width: 60px;
   cursor: pointer;
 }
 /*header*/ nav{
@@ -108,7 +108,7 @@ header ul.social-media{
 }
 header ul.navbar li a{
   padding: .5rem;
-  font-size: 1.2rem;
+  font-size: .9rem;
 }
 /*header*/ ul li a:hover{
   color: var(--styled-color);
@@ -245,8 +245,8 @@ header .container-search button:hover{
     gap: 1rem;
     border-radius: .4rem;
   }
-  header nav ul.navbar > li{
-    padding-top: 1.2rem;
+  header nav ul.navbar{
+    margin: 1rem;
   }
 
   header nav ul.navbar li a:hover{
@@ -258,7 +258,11 @@ header .container-search button:hover{
     display: inline;
   }
 
-  header nav ul.social-media{
+  header .container-search{
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* header nav ul.social-media{
     flex-direction: row;
     flex-wrap: wrap;
     position: absolute;
@@ -269,7 +273,7 @@ header .container-search button:hover{
 
   header nav ul.social-media li{
     flex: 1;
-  }
+  } */
   
   .bi-sun, .bi-moon{ 
     position: absolute;

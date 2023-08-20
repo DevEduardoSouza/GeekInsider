@@ -36,6 +36,11 @@ button{
   border: none;
 }
 
+nav
+ul, li{
+  list-style: none;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -55,6 +60,25 @@ button{
   width: 100%;
   background-color: var(--main-color);
 }
+
+/* About site */
+.informations-about{
+  background-color: var(--bg-color);
+}
+.informations-about-content{
+
+  margin: 0 auto ;
+  padding: .5rem .5rem;
+  color: #e4e5f1;
+}
+.navbar-infos{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: .8rem;
+}
+
+/* Header */
 header{
   /* border: 1px solid red; */
   height: 100px;
@@ -67,11 +91,11 @@ header .logo img{
   width: 80px;
   cursor: pointer;
 }
-header nav{
+/*header*/ nav{
   display: flex;
   gap: 3rem;
 }
-header ul{
+/*header*/ ul{
   display: flex;
   gap: 1rem;
 }
@@ -85,17 +109,14 @@ header ul.navbar i{
 header ul.social-media{
   font-size: 1.2rem;
 }
-header ul li{
-  list-style: none;
-}
 header ul.navbar li a{
   padding: .5rem;
   font-size: 1.2rem;
 }
-header ul li a:hover{
+/*header*/ ul li a:hover{
   color: var(--styled-color);
 }
-header ul li:hover{
+/*header*/ ul li:hover{
   color: var(--styled-color);
 }
 header .btn-hamburger{
@@ -196,6 +217,9 @@ header .btn-hamburger button:active{
     align-items: center;
     gap: 1rem;
     border-radius: .4rem;
+  }
+  header nav ul.navbar > li{
+    padding-top: 1.2rem;
   }
 
   header nav ul.navbar li a:hover{

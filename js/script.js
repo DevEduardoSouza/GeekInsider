@@ -38,7 +38,7 @@ const handleMenu = {
   createListeners() {
     const btn = this.getButtonHamburger();
     btn.addEventListener('click', () => {
-      const navbar = html.getElement('nav');
+      const navbar = html.getElement('.nav-categories');
       navbar.classList.toggle('hide');
     });
   }
@@ -47,7 +47,7 @@ handleMenu.createListeners();
 
 
 
-/*::::::::::-> Mundar tema <-::::::::::*/
+/*::::::::::-> Mudar tema <-::::::::::*/
 const toggleTheme = {
   toggleLightModel(){
     document.body.classList.toggle('light');

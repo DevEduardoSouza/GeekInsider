@@ -198,6 +198,17 @@ header .container-search button:hover{
 .light header nav{
   background-color: var(--theme-light);
 }
+.light header .container-search{
+  background-color: white;
+  
+}
+.light .container-search .bi,
+.light .container-search input{
+  color: #16161a;
+}
+.light .container-search .bi:hover{
+  color: #f3b410;
+}
 /*----------> END Estilos de mundança de tema  <-----------*/
 
 /*::::::::::-> News Gallery <-::::::::::*/

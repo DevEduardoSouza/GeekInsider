@@ -1,5 +1,5 @@
 /*::::::::::-> Dados para testes<-::::::::::*/
-const animeNewsData = [
+const dataAnimeNews = [
   {
     id: 1,
     title: 'New Season of "My Hero Academia" Announced',
@@ -155,7 +155,6 @@ const html = {
   }
 }
 
-
 /*::::::::::-> Add o active <-::::::::::*/
 const navbarBtnsCategory = {
   getCategories() {
@@ -174,7 +173,6 @@ const navbarBtnsCategory = {
 
 /*::::::::::-> Função do menu para add e remover navbar <-::::::::::*/
 const handleMenu = {
-
   getButtonHamburger() {
     return html.getElement('.btn-hamburger button');
   },
@@ -187,7 +185,6 @@ const handleMenu = {
   }
 };
 handleMenu.createListeners();
-
 
 
 /*::::::::::-> Mudar tema <-::::::::::*/

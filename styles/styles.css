@@ -11,6 +11,7 @@
   --font-main: 'Lato', sans-serif;
   --theme-light: #f8f8fb;
   --theme-light-bg: #e4e5f1;
+  --bd-develop: 1px solid red;
 }
 *{
   margin: 0;
@@ -21,7 +22,6 @@
 body{
   width: 100%;
   background-color: var(--bg-color);  
-  
 }
 a{
   text-decoration: none;
@@ -201,7 +201,6 @@ header .container-search button:hover{
 }
 .light header .container-search{
   background-color: white;
-  
 }
 .light .container-search .bi,
 .light .container-search input{
@@ -215,57 +214,60 @@ header .container-search button:hover{
 
 
 /*::::::::::-> News Gallery + Carousel <-::::::::::*/
-#news-gallery-grid {
-  margin: 0 auto;
-  /* border: 1px solid red; */
-  display: grid;
-  grid-column-gap: .5rem;
-  /* grid-row-gap: 1rem; */
-  margin-top: 1rem;
-  /* gap: 1rem; */
-  
 
-  grid-template-areas:
-    "carousel-content news-gallery-content"
-    "carousel-content news-gallery-content";
+#news-gallery {
+  margin: 1rem auto;
+  display: flex;
+  gap: .5rem;
+  width: 100%;
+  max-height: 400px;
 }
 
-.news-gallery-content {
-  width: 100%;
-  height: 200px;
-  /* background-color: gray; */
+#news-gallery #carousel-container{
+  width: 68%;
+  height: 100%;
+}
+
+#news-gallery #right-news{
+  width: 32%;
+}
+
+.news-gallery-content{
+  max-height: 398px;
   position: relative;
-  margin-bottom: .3rem;
-  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.122);
   overflow: hidden;
 }
 
-.carousel-content {
-  width: 100%;
-  height: 405px;
-  grid-area: carousel-content;
-  /* display: flex; */
+#news-gallery #right-news .news-gallery-content{
+  height: 50%;
 }
-#news-gallery-grid .container-link-post img {
+
+#news-gallery .container-link-post img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   transition: .5s;
 }
 
-#news-gallery-grid .container-link-post img:hover{
+#news-gallery .container-link-post img:hover{
   transform: scale(1.1);
   filter: brightness(70%);
 }
+
 .container-link-post .info-post{
   background: linear-gradient(rgba(17, 17, 17, 0) , rgba(17, 17, 17, 0.95) );
   color: #e4e5f1;
+  
   position: absolute;
   left: 0;
   bottom: 0;
   padding: 1rem;
   width: 100%;
 }
+.carousel-content .container-link-post .info-post{
+  padding: 2rem;
+}
+
 .container-controls{
   position: absolute;
   z-index: 10;
@@ -281,7 +283,7 @@ header .container-search button:hover{
   border: none;
   background-color: white;
 
-  z-index: 101;
+  z-index: 9;
   transition: .8s;
 }
 .container-controls button i{
@@ -294,11 +296,12 @@ header .container-search button:hover{
 #btn-prev,
 #btn-next {
     position: absolute;
+    z-index: 7;
 }
 #btn-next {
     right: 0px;
     transform: rotate(180deg);
-}
+} 
 
 
 /*-----------> END News Gallery <------------*/
@@ -331,6 +334,7 @@ header .container-search button:hover{
     display: none;
     flex-direction: column;
     gap: 0;
+    z-index: 100;
 
   }
   

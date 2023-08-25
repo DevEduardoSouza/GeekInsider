@@ -1,4 +1,3 @@
-
 /*::::::::::-> Dados para testes<-::::::::::*/
 const dataAnimeNews = [
   {
@@ -264,7 +263,6 @@ const postsCarousel = {
     }, 1000); // Tempo da animação em milissegundos
   }
 }
-
 
 
 /*::::::::::-> Mudar tema <-::::::::::*/

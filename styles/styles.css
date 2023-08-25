@@ -133,7 +133,6 @@ header .btn-hamburger button:active{
 }
 /*END Header */
 
-
 /* Search */
 header .container-search{
   padding: 0 .4rem;
@@ -191,7 +190,7 @@ header .container-search button:hover{
   display: block;
   color: var(--bg-color);
 }
-/* Theme para mobile */
+/*Theme para mobile*/
 .light header .btn-hamburger .bi{
   color: var(--main-color);
 }
@@ -212,9 +211,7 @@ header .container-search button:hover{
 /*----------> END Estilos de mundança de tema  <-----------*/
 
 
-
-/*::::::::::-> News Gallery + Carousel <-::::::::::*/
-
+/*:::::::::::::::-> News Gallery + Carousel <-:::::::::::::::*/
 #news-gallery {
   margin: 1rem auto;
   display: flex;
@@ -222,42 +219,34 @@ header .container-search button:hover{
   width: 100%;
   max-height: 400px;
 }
-
 #news-gallery #carousel-container{
   width: 71%;
   height: 100%;
 }
-
 #news-gallery #right-news{
   width: 32%;
   display: flex;
   flex-direction: column;
   gap: .5rem;
 }
-
 .news-gallery-content{
   max-height: 398px;
   position: relative;
   overflow: hidden;
 }
-
 #news-gallery #right-news .news-gallery-content{
   height: 50%;
 }
-
 #news-gallery .container-link-post img {
   width: 100%;
   height: 100%;
   object-fit: fill;
   transition: .5s;
-  
 }
-
 #news-gallery .container-link-post img:hover{
   transform: scale(1.1);
   filter: brightness(70%);
 }
-
 #news-gallery  .container-link-post .info-post{
   background: linear-gradient(rgba(17, 17, 17, 0) , rgba(0, 0, 0, 0.904) );
   color: #e4e5f1;
@@ -284,9 +273,6 @@ header .container-search button:hover{
 #news-gallery .info-post .title-post{
   text-shadow: 1px 1px 1px black;
 }
-/* #news-gallery .info-post:not(.category-post):hover{
-  color: #f3b410;
-} */
 .carousel-content  .info-post .title-post{
   font-size: 1.8rem;
 }
@@ -298,14 +284,12 @@ header .container-search button:hover{
   animation-name: slide;
   animation-fill-mode: forwards;
 }
-
 .container-statistic-author{
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: .8rem;
 }
-
 .container-controls{
   position: absolute;
   z-index: 10;
@@ -331,8 +315,7 @@ header .container-search button:hover{
 .container-controls button:hover {
   opacity: .8;
 }
-#btn-prev,
-#btn-next {
+#btn-prev,#btn-next {
     position: absolute;
     z-index: 7;
 }
@@ -340,8 +323,8 @@ header .container-search button:hover{
     right: 0px;
     transform: rotate(180deg);
 } 
-
 /*-----------> END News Gallery <------------*/
+
 
 
 /*::::::::::-> Responsiviade <-::::::::::*/
@@ -427,7 +410,6 @@ header .container-search button:hover{
   /* Finalizando o menu mobile*/
 
 }
-
 @media (max-width: 700px){
   .informations-about{
     display: none;
@@ -435,7 +417,6 @@ header .container-search button:hover{
 }
 
 /*::::::::::-> Efeitos <-::::::::::*/
-
 @keyframes slide {
   from {
     opacity: 0;

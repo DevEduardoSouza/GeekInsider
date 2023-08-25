@@ -211,6 +211,16 @@ header .container-search button:hover{
 /*----------> END Estilos de mundança de tema  <-----------*/
 
 
+/*:::::::::::::::-> Estilos gerais da Main <-:::::::::::::::*/
+.container-main{
+  flex-direction: column;
+  margin: auto;
+  border: var(--bd-develop);
+}
+/*----------> END Estilos gerais da Main  <-----------*/
+
+
+
 /*:::::::::::::::-> News Gallery + Carousel <-:::::::::::::::*/
 #news-gallery {
   margin: 1rem auto;

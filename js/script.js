@@ -1,3 +1,4 @@
+
 /*::::::::::-> Dados para testes<-::::::::::*/
 const dataAnimeNews = [
   {
@@ -186,12 +187,12 @@ handleMenu.createListeners();
 
 
 /*::::::::::-> Função carousel <-::::::::::*/
-
+let carouselInterval;
 // Estado do Carousel
 const stateCarousel = {
   page: 1,
   totalPosts: 5,
-  sleep: 3000
+  sleep: 5000
 }
 
 // Selecionar os posts
@@ -204,12 +205,14 @@ const controls = {
     if(stateCarousel.page > stateCarousel.totalPosts){
       stateCarousel.page = 1;
     }
+    this.resetCarouselInterval();
   },
   prev() {
     stateCarousel.page--;
     if(stateCarousel.page < 1){
       stateCarousel.page = stateCarousel.totalPosts;
     }
+    this.resetCarouselInterval();
   },
   createListeners() {
     html.getElement('#btn-prev').addEventListener('click', ()=>{
@@ -221,11 +224,17 @@ const controls = {
         update();
     });
   },
-  
+  resetCarouselInterval() {
+    clearInterval(carouselInterval);
+    carouselInterval = setInterval(() => {
+      controls.next();
+      update();
+    }, stateCarousel.sleep);
+  },
 }
 
-// Resolver -> quando clicar para mudar zerar o tempo
-setInterval(()=>{
+
+carouselInterval = setInterval(()=>{
     controls.next();
     update();
 }, stateCarousel.sleep);
@@ -237,7 +246,7 @@ const postsCarousel = {
 
     const img = html.getElement('.carousel-content .container-link-post img');
     img.src = filterPosts[state].imageUrl;
-
+    img.classList.add('fade-in');
     const category = html.getElement('.container-link-post .category-post');
     category.innerText = filterPosts[state].category;
 
@@ -249,6 +258,10 @@ const postsCarousel = {
     
     const totalComments = html.getElement('.container-link-post .total-comments-post');
     totalComments.innerHTML =`<i class="bi bi-chat-fill"></i> ${filterPosts[state].comments_count}`;
+
+    setTimeout(() => {
+      img.classList.remove('fade-in');
+    }, 1000); // Tempo da animação em milissegundos
   }
 }
 

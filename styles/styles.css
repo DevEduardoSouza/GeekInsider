@@ -250,6 +250,7 @@ header .container-search button:hover{
   height: 100%;
   object-fit: fill;
   transition: .5s;
+  
 }
 
 #news-gallery .container-link-post img:hover{
@@ -291,6 +292,11 @@ header .container-search button:hover{
 }
 .carousel-content .container-link-post .info-post{
   padding: 2rem;
+}
+.fade-in {
+  animation-duration: 1s;
+  animation-name: slide;
+  animation-fill-mode: forwards;
 }
 
 .container-statistic-author{
@@ -425,5 +431,17 @@ header .container-search button:hover{
 @media (max-width: 700px){
   .informations-about{
     display: none;
+  }
+}
+
+/*::::::::::-> Efeitos <-::::::::::*/
+
+@keyframes slide {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

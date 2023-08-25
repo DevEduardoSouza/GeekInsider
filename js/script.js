@@ -138,8 +138,6 @@ const dataAnimeNews = [
     },
 ];
 
-
-
 const html = {
   getElement(element) {
     return document.querySelector(element);
@@ -187,6 +185,75 @@ const handleMenu = {
 handleMenu.createListeners();
 
 
+/*::::::::::-> Função carousel <-::::::::::*/
+
+// Estado do Carousel
+const stateCarousel = {
+  page: 1,
+  totalPosts: 5,
+  sleep: 3000
+}
+
+// Selecionar os posts
+const filterPosts = dataAnimeNews.slice(stateCarousel.page-1, stateCarousel.totalPosts);
+
+// Controles de mundança
+const controls = {
+  next() {
+    stateCarousel.page++;
+    if(stateCarousel.page > stateCarousel.totalPosts){
+      stateCarousel.page = 1;
+    }
+  },
+  prev() {
+    stateCarousel.page--;
+    if(stateCarousel.page < 1){
+      stateCarousel.page = stateCarousel.totalPosts;
+    }
+  },
+  createListeners() {
+    html.getElement('#btn-prev').addEventListener('click', ()=>{
+        controls.prev();
+        update();
+    });
+    html.getElement('#btn-next').addEventListener('click', ()=>{
+        controls.next();
+        update();
+    });
+  },
+  
+}
+
+// Resolver -> quando clicar para mudar zerar o tempo
+setInterval(()=>{
+    controls.next();
+    update();
+}, stateCarousel.sleep);
+
+// Mundança de estado
+const postsCarousel = {
+  update(){
+    const state = stateCarousel.page-1;
+
+    const img = html.getElement('.carousel-content .container-link-post img');
+    img.src = filterPosts[state].imageUrl;
+
+    const category = html.getElement('.container-link-post .category-post');
+    category.innerText = filterPosts[state].category;
+
+    const title = html.getElement('.container-link-post .title-post');
+    title.innerText = filterPosts[state].title;
+    
+    const author = html.getElement('.container-link-post .author-post');
+    author.innerText = filterPosts[state].author.name;
+    
+    const totalComments = html.getElement('.container-link-post .total-comments-post');
+    totalComments.innerHTML =`<i class="bi bi-chat-fill"></i> ${filterPosts[state].comments_count}`;
+  }
+}
+
+
+
 /*::::::::::-> Mudar tema <-::::::::::*/
 const toggleTheme = {
   toggleLightModel(){
@@ -213,8 +280,16 @@ const toggleTheme = {
   }
 }
 
+/*::::::::::-> Funções de inicializar e atualizar<-::::::::::*/
+const update = ()=>{
+  postsCarousel.update()
+  console.log(stateCarousel.page)
+}
+
 function init() {
+  update();
   toggleTheme.loadThemeLocalStorage();
   toggleTheme.buttonChangeTheme();
+  controls.createListeners();
 }
 init();

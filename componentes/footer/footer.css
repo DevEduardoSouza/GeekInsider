@@ -1,35 +1,49 @@
 footer {
   color: var(--theme-light);
+  margin-top: 2rem;
 }
 footer .content-footer.container {
   border: var(--dev-border);
   padding: 1rem 0;
   margin: 0 auto;
-  gap: 6rem;
+  gap: 1.5rem;
+  border-top: 1px solid #cccccc88;
+  flex-direction: column;
 }
 footer .content-footer .container-brand {
-  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 footer .content-footer .container-brand .logo img {
   width: 70px;
   height: 70px;
+  margin-left: 80px;
 }
-footer .content-footer .container-bran p {
+footer .content-footer .container-brand .ad .payments {
+  display: flex;
 }
-footer .categories {
-  flex: 1;
-}
-footer .categories span {
-  font-size: 1.2rem;
+footer .content-footer .container-brand .ad .payments img {
+  width: 150px;
+  width: 100px;
 }
 footer .categories nav {
-  margin-top: 1rem;
+  width: 100%;
 }
 footer .categories nav ul {
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  gap: .5rem;
+  gap: 2rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: .8rem;
 }
-footer .categories nav ul span{
-  font-size: 1rem;
+
+.light footer{
+  background-color: var(--theme-light);
 }
+.light footer, .light footer a{
+  color: var(--main-color) ;
+}
+

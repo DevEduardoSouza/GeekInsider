@@ -1,0 +1,35 @@
+footer {
+  color: var(--theme-light);
+}
+footer .content-footer.container {
+  border: var(--dev-border);
+  padding: 1rem 0;
+  margin: 0 auto;
+  gap: 6rem;
+}
+footer .content-footer .container-brand {
+  flex: 1;
+}
+footer .content-footer .container-brand .logo img {
+  width: 70px;
+  height: 70px;
+}
+footer .content-footer .container-bran p {
+}
+footer .categories {
+  flex: 1;
+}
+footer .categories span {
+  font-size: 1.2rem;
+}
+footer .categories nav {
+  margin-top: 1rem;
+}
+footer .categories nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+footer .categories nav ul span{
+  font-size: 1rem;
+}

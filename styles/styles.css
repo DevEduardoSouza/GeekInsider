@@ -11,7 +11,7 @@
   --font-main: 'Lato', sans-serif;
   --theme-light: #f8f8fb;
   --theme-light-bg: #e4e5f1;
-  --dev-border: 1px solid red;
+  --dev-border: 0px solid red;
 }
 *{
   margin: 0;
@@ -110,10 +110,10 @@ header ul.navbar li a{
   padding: .5rem;
   font-size: .9rem;
 }
-/*header*/ ul li a:hover{
+/*header*/.light ul li .bi:hover,  ul li a:hover{
   color: var(--styled-color);
 }
-/*header*/ ul li:hover{
+/*header*/.light  ul li a:hover, ul li:hover{
   color: var(--styled-color);
 }
 header .btn-hamburger{

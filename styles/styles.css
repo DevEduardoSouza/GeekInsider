@@ -2,8 +2,8 @@
 
 /* Váriaveis de estilização do projeto */
 :root{
-  --border-radius-default: 1rem;
-  --padding-default: 1rem;
+  --radius: 1rem;
+  --padding: 1rem;
   --main-color: #202024;
   --bg-color: #16161a;
   --title-color: #f8f8fb;
@@ -11,7 +11,7 @@
   --font-main: 'Lato', sans-serif;
   --theme-light: #f8f8fb;
   --theme-light-bg: #e4e5f1;
-  --bd-develop: 1px solid red;
+  --dev-border: 1px solid red;
 }
 *{
   margin: 0;
@@ -215,7 +215,7 @@ header .container-search button:hover{
 .container-main{
   flex-direction: column;
   margin: auto;
-  border: var(--bd-develop);
+  border: var(--dev-border);
 }
 /*----------> END Estilos gerais da Main  <-----------*/
 

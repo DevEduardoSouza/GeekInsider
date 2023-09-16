@@ -311,10 +311,10 @@ header .container-search button:hover {
 .light #latest-news {
   color: #16161a;
 }
-.light .post span, .light a span{ 
+.light #latest-news  .post span, .light  #latest-news a span{ 
   color: #16161a !important;
 }
-.light a span:hover{
+.light #latest-news  a span:hover{
   text-decoration: underline var(--styled-color) ;
 }
 

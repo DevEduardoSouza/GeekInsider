@@ -14,7 +14,7 @@
   --font-main: 'Lato', sans-serif;
   --theme-light: #f8f8fb;
   --theme-light-bg: #e4e5f1;
-  --dev-border: 1px solid red;
+  --dev-border: 0px solid red;
 }
 *{
   margin: 0;

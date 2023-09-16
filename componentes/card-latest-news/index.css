@@ -2,7 +2,7 @@
 
 .container-latest-news .post {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   margin-top: 2rem;
   padding-top: 1rem;
   border-top: 1px solid #333;
@@ -46,7 +46,7 @@
 .container-latest-news .post .content-post .preview-description {
   color: #d3d3d3;
   font-size: 1.1rem;
-  line-height: 1.3rem;
+  line-height: 2rem;
 }
 .container-latest-news .post .content-post .post-details{
   display: flex;

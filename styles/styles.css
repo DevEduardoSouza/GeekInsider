@@ -298,16 +298,26 @@ header .container-search button:hover {
   margin: 2rem 0;
   color: #f2f2f2;
 }
+
 .container-latest-news {
   flex-grow: 1;
-  
 }
-
 .aside-latest-news {
   /* background-color: #e4e5f1; */
   flex-shrink: 0;
-  width: 31%;
+  width: 25%;
 }
+
+.light #latest-news {
+  color: #16161a;
+}
+.light .post span, .light a span{ 
+  color: #16161a !important;
+}
+.light a span:hover{
+  text-decoration: underline var(--styled-color) ;
+}
+
 /*-----------> END Latest News <------------*/
 
 /*::::::::::-> Responsiviade <-::::::::::*/

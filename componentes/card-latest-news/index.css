@@ -1,0 +1,57 @@
+/* Card-letest-news */
+
+.container-latest-news .post {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #333;
+
+}
+.container-latest-news .post .container-img-latest {
+  width: 45%;
+  /* width: 250px; */
+  height: 260px;
+
+  position: relative;
+}
+.container-latest-news .post .container-img-latest img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s;
+}
+.container-latest-news .post .container-img-latest img:hover{
+  filter: brightness(40%);
+}
+.category-post-ln {
+  color: #f3b410;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+.container-latest-news .post .content-post {
+  width: 55%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.container-latest-news .post .content-post .title-post {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.container-latest-news .post .content-post .preview-description {
+  color: #d3d3d3;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+}
+.container-latest-news .post .content-post .post-details{
+  display: flex;
+  justify-content: space-between;
+}
+.container-latest-news .post .content-post a:hover{
+  text-decoration: underline;
+}

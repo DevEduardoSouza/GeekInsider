@@ -1,5 +1,8 @@
 /*::::::::::-> Configurações gerais <-::::::::::*/
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+/* font-family: 'Sriracha', cursive; */
+
 /* Váriaveis de estilização do projeto */
 :root{
   --radius: 1rem;
@@ -11,7 +14,7 @@
   --font-main: 'Lato', sans-serif;
   --theme-light: #f8f8fb;
   --theme-light-bg: #e4e5f1;
-  --dev-border: 0px solid red;
+  --dev-border: 1px solid red;
 }
 *{
   margin: 0;

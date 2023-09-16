@@ -1,114 +1,124 @@
-
 /*::::::::::-> Estilos do Header <-::::::::::*/
-.container-header{
+.container-header {
   width: 100%;
   background-color: var(--main-color);
 }
 
 /* About site */
-.informations-about{
+.informations-about {
   background-color: var(--bg-color);
 }
-.informations-about-content{
-
-  margin: 0 auto ;
-  padding: .5rem .5rem;
+.informations-about-content {
+  margin: 0 auto;
+  padding: 0.5rem 0.5rem;
   color: #e4e5f1;
 }
-.navbar-infos{
+.navbar-infos {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 /*END About site */
 
 /* Header */
-header{
+header {
   /* border: 1px solid red; */
   height: 100px;
   margin: auto;
   align-items: center;
   height: 70px;
-
 }
-header .logo img{
+
+header .logo img {
   width: 60px;
   cursor: pointer;
 }
-/*header*/ nav{
+header .logo a {
+  display: flex;
+  align-items: center;
+}
+header .logo a span {
+  font-size: 1.8rem;
+  font-family: "Sriracha", cursive;
+}
+/*header*/
+nav {
   display: flex;
   gap: 3rem;
 }
-/*header*/ ul{
+/*header*/
+ul {
   display: flex;
   gap: 1rem;
 }
-header ul.navbar{
+header ul.navbar {
   text-transform: uppercase;
   font-weight: bold;
 }
-header ul.navbar i{
+header ul.navbar i {
   display: none;
 }
-header ul.social-media{
+header ul.social-media {
   font-size: 1.2rem;
 }
-header ul.navbar li a{
-  padding: .5rem;
-  font-size: .9rem;
+header ul.navbar li a {
+  padding: 0.5rem;
+  font-size: 0.9rem;
 }
-/*header*/.light ul li .bi:hover,  ul li a:hover{
+/*header*/
+.light ul li .bi:hover,
+ul li a:hover {
   color: var(--styled-color);
 }
-/*header*/.light  ul li a:hover, ul li:hover{
+/*header*/
+.light ul li a:hover,
+ul li:hover {
   color: var(--styled-color);
 }
-header .btn-hamburger{
+header .btn-hamburger {
   display: none;
 }
-header .btn-hamburger button{
+header .btn-hamburger button {
   color: var(--title-color);
   font-size: 2rem;
   cursor: pointer;
-  transition: .8s;
-} 
-header .btn-hamburger button:hover{
+  transition: 0.8s;
+}
+header .btn-hamburger button:hover {
   color: #f3b410;
 }
-header .btn-hamburger button:active{
-  opacity: .7;
+header .btn-hamburger button:active {
+  opacity: 0.7;
 }
 /*END Header */
 
 /* Search */
-header .container-search{
-  padding: 0 .4rem;
-  border-radius: .2rem;
-  background-color: #25282F;
+header .container-search {
+  padding: 0 0.4rem;
+  border-radius: 0.2rem;
+  background-color: #25282f;
 }
-header .container-search input{
+header .container-search input {
   background-color: transparent;
   border: none;
 }
-header .container-search input{
+header .container-search input {
   outline: none;
   color: var(--title-color);
 }
-header .container-search button{
+header .container-search button {
   font-size: 1rem;
-  padding: .2rem;
+  padding: 0.2rem;
   cursor: pointer;
   color: var(--title-color);
 }
-header .container-search button:hover{
+header .container-search button:hover {
   color: var(--styled-color);
 }
 /* END Search */
 
 /*---------->END Estilos do Header <-----------*/
-
-
 
 /*::::::::::-> Estilos de mundança de tema  <-::::::::::*/
 .container-change-theme input[type="checkbox"] {
@@ -122,13 +132,13 @@ header .container-search button:hover{
 .bi-moon {
   display: none;
 }
-.light{
+.light {
   background-color: var(--theme-light-bg);
- }
-.light .container-header {
-  background-color:  var(--theme-light);
 }
-.light .container-header header a{
+.light .container-header {
+  background-color: var(--theme-light);
+}
+.light .container-header header a {
   color: var(--bg-color);
 }
 .light .bi-sun {
@@ -139,74 +149,70 @@ header .container-search button:hover{
   color: var(--bg-color);
 }
 /*Theme para mobile*/
-.light header .btn-hamburger .bi{
+.light header .btn-hamburger .bi {
   color: var(--main-color);
 }
-.light header nav{
+.light header nav {
   background-color: var(--theme-light);
-  
 }
-.light header .container-search{
+.light header .container-search {
   background-color: white;
 }
 .light .container-search .bi,
-.light .container-search input{
+.light .container-search input {
   color: #16161a;
 }
-.light .container-search .bi:hover{
+.light .container-search .bi:hover {
   color: #f3b410;
 }
 /*----------> END Estilos de mundança de tema  <-----------*/
 
-
 /*:::::::::::::::-> Estilos gerais da Main <-:::::::::::::::*/
-.container-main{
+.container-main {
   flex-direction: column;
   margin: auto;
   border: var(--dev-border);
 }
 /*----------> END Estilos gerais da Main  <-----------*/
 
-
-
 /*:::::::::::::::-> News Gallery + Carousel <-:::::::::::::::*/
 #news-gallery {
   margin: 1rem auto;
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   width: 100%;
   max-height: 400px;
 }
-#news-gallery #carousel-container{
+#news-gallery #carousel-container {
   width: 71%;
   height: 100%;
 }
-#news-gallery #right-news{
+#news-gallery #right-news {
   width: 32%;
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
 }
-.news-gallery-content{
+.news-gallery-content {
   max-height: 398px;
   position: relative;
   overflow: hidden;
 }
-#news-gallery #right-news .news-gallery-content{
+#news-gallery #right-news .news-gallery-content {
   height: 50%;
 }
 #news-gallery .container-link-post img {
   width: 100%;
   height: 100%;
   object-fit: fill;
-  transition: .5s;
+  transition: 0.5s;
 }
-#news-gallery .container-link-post img:hover{
+#news-gallery .container-link-post img:hover {
   transform: scale(1.1);
   filter: brightness(70%);
 }
-#news-gallery  .container-link-post .info-post{
-  background: linear-gradient(rgba(17, 17, 17, 0) , rgba(0, 0, 0, 0.904) );
+#news-gallery .container-link-post .info-post {
+  background: linear-gradient(rgba(17, 17, 17, 0), rgba(0, 0, 0, 0.904));
   color: #e4e5f1;
   position: absolute;
   left: 0;
@@ -216,25 +222,25 @@ header .container-search button:hover{
 
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
   word-wrap: break-word;
   font-weight: bold;
 }
-#news-gallery .info-post .category-post{
+#news-gallery .info-post .category-post {
   background-color: var(--styled-color);
-  padding: .2rem;
+  padding: 0.2rem;
   width: 97px;
   color: var(--bg-color);
   font-weight: bold;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
 }
-#news-gallery .info-post .title-post{
+#news-gallery .info-post .title-post {
   text-shadow: 1px 1px 1px black;
 }
-.carousel-content  .info-post .title-post{
+.carousel-content .info-post .title-post {
   font-size: 1.8rem;
 }
-.carousel-content .container-link-post .info-post{
+.carousel-content .container-link-post .info-post {
   padding: 2rem;
 }
 .fade-in {
@@ -242,13 +248,13 @@ header .container-search button:hover{
   animation-name: slide;
   animation-fill-mode: forwards;
 }
-.container-statistic-author{
+.container-statistic-author {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
-.container-controls{
+.container-controls {
   position: absolute;
   z-index: 10;
   top: 40%;
@@ -264,40 +270,59 @@ header .container-search button:hover{
   background-color: white;
 
   z-index: 9;
-  transition: .8s;
+  transition: 0.8s;
 }
-.container-controls button i{
+.container-controls button i {
   font-size: 2rem;
   color: #f3b410;
 }
 .container-controls button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
-#btn-prev,#btn-next {
-    position: absolute;
-    z-index: 7;
+#btn-prev,
+#btn-next {
+  position: absolute;
+  z-index: 7;
 }
 #btn-next {
-    right: 0px;
-    transform: rotate(180deg);
-} 
+  right: 0px;
+  transform: rotate(180deg);
+}
 /*-----------> END News Gallery <------------*/
 
+/*:::::::::::::::-> Latest Newsl <-:::::::::::::::*/
+#latest-news {
+  border: var(--dev-border);
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  color: #f2f2f2;
+}
+.container-latest-news {
+  flex-grow: 1;
+  
+}
 
+.aside-latest-news {
+  /* background-color: #e4e5f1; */
+  flex-shrink: 0;
+  width: 31%;
+}
+/*-----------> END Latest News <------------*/
 
 /*::::::::::-> Responsiviade <-::::::::::*/
-@media (max-width: 1100px){
-  header .btn-hamburger{
+@media (max-width: 1100px) {
+  header .btn-hamburger {
     display: block;
   }
 
   /* Modificando o menu para menu mobile */
 
-  .container-header{
+  .container-header {
     position: relative;
   }
 
-  header nav{
+  header nav {
     background-color: var(--bg-color);
     box-shadow: 3px 2px 9px 0px rgba(0, 0, 0, 0.363);
 
@@ -308,68 +333,55 @@ header .container-search button:hover{
     min-height: 100vh;
     width: 80%;
     max-width: 240px;
-    
+
     display: none;
     flex-direction: column;
     gap: 0;
     z-index: 100;
-
   }
-  
-  header nav ul{
+
+  header nav ul {
     flex-direction: column;
   }
 
-  header nav ul.navbar{
+  header nav ul.navbar {
     padding: 1rem;
   }
 
-  header nav ul.navbar li a{
+  header nav ul.navbar li a {
     display: flex;
     align-items: center;
     gap: 1rem;
-    border-radius: .4rem;
+    border-radius: 0.4rem;
   }
-  header nav ul.navbar{
+  header nav ul.navbar {
     margin: 1rem;
   }
 
-  header nav ul.navbar li a:hover{
-    background-color: #25282F;
+  header nav ul.navbar li a:hover {
+    background-color: #25282f;
     color: var(--styled-color);
   }
 
-  header ul.navbar i{
+  header ul.navbar i {
     display: inline;
   }
 
-  header .container-search{
+  header .container-search {
     width: 80%;
     margin: 0 auto;
   }
-  /* header nav ul.social-media{
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: absolute;
-    bottom: 1rem;
-    left: 20%;
-    right: 20%;
-  }
 
-  header nav ul.social-media li{
-    flex: 1;
-  } */
-  
-  .bi-sun, .bi-moon{ 
+  .bi-sun,
+  .bi-moon {
     position: absolute;
     top: 10px;
     right: 10px;
   }
   /* Finalizando o menu mobile*/
-
 }
-@media (max-width: 700px){
-  .informations-about{
+@media (max-width: 700px) {
+  .informations-about {
     display: none;
   }
 }

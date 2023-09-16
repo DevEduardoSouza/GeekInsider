@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/style-global.css" />
     <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon" />
     <!-- Todos os script -->
     <script src="js/script.js" defer></script>
+    <script src="data/latestNews.json"></script>
 
     <!-- Biblioteca para os incones -->
     <link
@@ -26,6 +28,10 @@
     <!-- footer -->
     <script src="componentes/footer/footer.js" defer></script>
     <link rel="stylesheet" href="componentes/footer/footer.css" />
+    <script src="js/GlobalFooter.js"></script>
+    <!-- Card -->
+    <link rel="stylesheet" href="componentes/card-latest-news/index.css">
+    <script src="componentes/card-latest-news/card.js" defer></script>
 
     <title>GeekInsider</title>
   </head>
@@ -67,6 +73,7 @@
         <div class="logo">
           <a href="index.html" title="Home">
             <img src="imgs/logo-geekInseder-02.png" alt="Logo do site" />
+            <span>GeekInsider</span>
           </a>
         </div>
         <nav class="nav-categories">
@@ -230,158 +237,61 @@
       </section>
       <!--END News Gallery-->
 
-      <!--Latest News"-->
+      <!--Latest News-->
       <section id="latest-news">
-        <div class="container-latest-news">
+        <section class="container-latest-news">
           <h2>Últimas Notícias</h2>
 
           <div class="content-latest-news">
-            <div class="post" id="1">
-              <span class="category-post category-post-ln"></span>
-              <img class="img-post" src="" alt="" />
-              <span class="title-post"></span>
-              <span class="preview-description"
-                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Corporis est dolores provident odit nostrum. Deserunt corporis
-                molestiae deleniti, amet minus earum minima ipsum modi
-                architecto quod illum tempore voluptas? Exercitationem.</span
-              >
-
-              <div class="post-details">
-                <div class="author-details">
+            <!-- Modelo -->
+            <!-- <div class="post" id="1">
+              <div class="container-img-latest">
+                <a href="#">
                   <img
-                    src="https://cdn-icons-png.flaticon.com/512/219/219983.png"
-                    alt="Eduardo Souza"
+                    class="img-post"
+                    src="https://criticalhits.com.br/wp-content/uploads/2022/02/signo-sakura-naruto.jpg"
+                    alt=""
                   />
-                  <span>Por Eduardo souza</span>
-                </div>
+                </a>
+              </div>
 
-                <div class="statistic-post">
-                  <span class="total-comments">
-                    <i class="fa fa-comment" aria-hidden="true"></i>
-                    <span class="value">20</span>
-                  </span>
-                  <span class="total-views">
-                    <i class="fa fa-eye" aria-hidden="true"></i>
-                    <span class="value">55</span>
-                  </span>
-                  <span class="post-date">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                    <span class="value">27/07/2023</span>
-                  </span>
+              <div class="content-post">
+                <span class="category-post category-post-ln">Anime</span>
+                <a href="#">
+                  <span class="title-post"
+                    >Chris Evans Ribbed Michael Cera for Resurrecting the
+                    Original Scott Pilgrim Cast Email Chain</span
+                  >
+                </a>
+                <span class="preview-description"
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Corporis est dolores provident odit nostrum. Deserunt corporis
+                  molestiae deleniti, amet minus earum minima</span
+                >
+                <div class="post-details">
+                  <div class="author-details">
+                    <i class="bi bi-person-square"></i>
+                    <span>Por Eduardo souza</span>
+                  </div>
+                  <div class="statistic-post">
+                   
+                    <span class="post-date">
+                      
+                      <span class="value">7 horas atras</span>
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="post" id="2">
-              <span class="category-post category-post-ln"></span>
-              <img class="img-post" src="" alt="" />
-              <span class="title-post"></span>
-              <span class="preview-description"
-                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Corporis est dolores provident odit nostrum. Deserunt corporis
-                molestiae deleniti, amet minus earum minima ipsum modi
-                architecto quod illum tempore voluptas? Exercitationem.</span
-              >
-
-              <div class="post-details">
-                <div class="author-details">
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/219/219983.png"
-                    alt="Eduardo Souza"
-                  />
-                  <span>Por Eduardo souza</span>
-                </div>
-
-                <div class="statistic-post">
-                  <span class="total-comments">
-                    <i class="fa fa-comment" aria-hidden="true"></i>
-                    <span class="value">20</span>
-                  </span>
-                  <span class="total-views">
-                    <i class="fa fa-eye" aria-hidden="true"></i>
-                    <span class="value">55</span>
-                  </span>
-                  <span class="post-date">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                    <span class="value">27/07/2023</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="post" id="3">
-              <span class="category-post category-post-ln"></span>
-              <img class="img-post" src="" alt="" />
-              <span class="title-post"></span>
-              <span class="preview-description"
-                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Corporis est dolores provident odit nostrum. Deserunt corporis
-                molestiae deleniti, amet minus earum minima ipsum modi
-                architecto quod illum tempore voluptas? Exercitationem.</span
-              >
-
-              <div class="post-details">
-                <div class="author-details">
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/219/219983.png"
-                    alt="Eduardo Souza"
-                  />
-                  <span>Por Eduardo souza</span>
-                </div>
-
-                <div class="statistic-post">
-                  <span class="total-comments">
-                    <i class="fa fa-comment" aria-hidden="true"></i>
-                    <span class="value">20</span>
-                  </span>
-                  <span class="total-views">
-                    <i class="fa fa-eye" aria-hidden="true"></i>
-                    <span class="value">55</span>
-                  </span>
-                  <span class="post-date">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                    <span class="value">27/07/2023</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="post" id="4">
-              <span class="category-post category-post-ln"></span>
-              <img class="img-post" src="" alt="" />
-              <span class="title-post"></span>
-              <span class="preview-description"
-                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Corporis est dolores provident odit nostrum. Deserunt corporis
-                molestiae deleniti, amet minus earum minima ipsum modi
-                architecto quod illum tempore voluptas? Exercitationem.</span
-              >
-
-              <div class="post-details">
-                <div class="author-details">
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/219/219983.png"
-                    alt="Eduardo Souza"
-                  />
-                  <span>Por Eduardo souza</span>
-                </div>
-
-                <div class="statistic-post">
-                  <span class="total-comments">
-                    <i class="fa fa-comment" aria-hidden="true"></i>
-                    <span class="value">20</span>
-                  </span>
-                  <span class="total-views">
-                    <i class="fa fa-eye" aria-hidden="true"></i>
-                    <span class="value">55</span>
-                  </span>
-                  <span class="post-date">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                    <span class="value">27/07/2023</span>
-                  </span>
-                </div>
-              </div>
-            </div>
+            </div> -->
           </div>
-        </div>
+        </section>
+
+        <aside class="aside-latest-news">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+          doloribus aliquid atque possimus maxime iste commodi minima nihil,
+          quidem, vitae facilis nobis praesentium earum dolore dolor modi.
+          Perspiciatis, enim quibusdam?
+        </aside>
       </section>
       <!--END Latest News"-->
     </main>
@@ -413,10 +323,13 @@
             </a>
           </div>
           <div class="ad">
-            <span>Remova os anúcios</span>
+            <span class="massage-remove-ad">Remova os anúcios</span>
             <div class="payments">
-              <img src="imgs/logo-pix-256.png" alt="logo pix">
-              <img src="imgs/logo-mercado-pago-256.png" alt="logo mercado pago">
+              <img src="imgs/logo-pix-256.png" alt="logo pix" />
+              <img
+                src="imgs/logo-mercado-pago-256.png"
+                alt="logo mercado pago"
+              />
             </div>
           </div>
         </div>
@@ -449,5 +362,7 @@
       </div>
     </footer>
     <!--END Footer -->
+
+    <!-- <global-footer></global-footer> -->
   </body>
 </html>

@@ -1,0 +1,53 @@
+/*::::::::::-> Configurações gerais <-::::::::::*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+/* font-family: 'Sriracha', cursive; */
+
+/* Váriaveis de estilização do projeto */
+:root{
+  --radius: 1rem;
+  --padding: 1rem;
+  --main-color: #202024;
+  --bg-color: #16161a;
+  --title-color: #f8f8fb;
+  --styled-color: #f3b410;
+  --font-main: 'Lato', sans-serif;
+  --theme-light: #f8f8fb;
+  --theme-light-bg: #e4e5f1;
+  --dev-border: 0px solid red;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+}
+body{
+  width: 100%;
+  background-color: var(--bg-color);  
+}
+a{
+  text-decoration: none;
+  color: var(--title-color);
+}
+button{
+  background: none;
+  border: none;
+}
+nav
+ul, li{
+  list-style: none;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1250px;
+  width: 90%;
+}
+.active{
+  color: var(--styled-color);
+}
+.hide{
+  display: flex;
+}
+/*::::::::::-> END Configurações gerais <-::::::::::*/

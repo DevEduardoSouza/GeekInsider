@@ -290,11 +290,12 @@ header .container-search button:hover {
 }
 /*-----------> END News Gallery <------------*/
 
-/*:::::::::::::::-> Latest Newsl <-:::::::::::::::*/
+
+/*:::::::::::::::-> Latest News <-:::::::::::::::*/
 #latest-news {
   border: var(--dev-border);
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
   margin: 2rem 0;
   color: #f2f2f2;
 }
@@ -306,6 +307,8 @@ header .container-search button:hover {
   /* background-color: #e4e5f1; */
   flex-shrink: 0;
   width: 25%;
+  background-color: var(--main-color);
+  padding: 2rem;
 }
 
 .light #latest-news {
@@ -317,8 +320,18 @@ header .container-search button:hover {
 .light #latest-news  a span:hover{
   text-decoration: underline var(--styled-color) ;
 }
-
 /*-----------> END Latest News <------------*/
+
+
+/*:::::::::::::::-> Aside Latest News <-:::::::::::::::*/
+/* .container-aside-ln{
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+/*-----------> Aside Latest News <------------*/
+
+
 
 /*::::::::::-> Responsiviade <-::::::::::*/
 @media (max-width: 1100px) {

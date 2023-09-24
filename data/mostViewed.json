@@ -1,0 +1,70 @@
+[
+  {
+    "id": "a1b2c3d",
+    "title": "The Rise of Quantum Computing",
+    "content": "Explore the fascinating world of quantum computing and its potential to revolutionize the tech industry. Learn about quantum bits, quantum algorithms, and the race to build practical quantum computers.",
+    "category": "Technology",
+    "comments_count": 15,
+    "views_count": 800,
+    "author": { "name": "TechInnovator" },
+    "createdAt": "January 10, 2024",
+    "imageUrl": "https://etimg.etb2bimg.com/thumb/msid-95219110,imgsize-53674,width-1200,height=765,overlay-etcio/next-gen-technologies/the-rise-of-quantum-computing-4-things-cios-should-know.jpg",
+    "views": 3500,
+    "comments": [
+      { "id": "e1f2g3h", "author": "QuantumEnthusiast", "content": "Quantum computing is the future!" },
+      { "id": "e2f3g4h", "author": "TechGeek123", "content": "I can't wait to see practical applications!" },
+      { "id": "e3f4g5h", "author": "InnovationGeek", "content": "This is a game-changer for tech." }
+    ]
+  },
+  {
+    "id": "i4j5k6l",
+    "title": "The Importance of Mental Health Awareness",
+    "content": "Discover the significance of mental health awareness in today's fast-paced world. Learn about the impact of stress, ways to cope, and the importance of seeking help when needed.",
+    "category": "Health and Wellness",
+    "comments_count": 20,
+    "views_count": 1200,
+    "author": { "name": "WellnessAdvocate" },
+    "createdAt": "February 22, 2024",
+    "imageUrl": "https://jungle-dancer.com/wp-content/uploads/2020/09/MENTAL-HEALTH-1024x724.png",
+    "views": 5000,
+    "comments": [
+      { "id": "m1n2o3p", "author": "WellnessWarrior", "content": "Mental health is as important as physical health!" },
+      { "id": "m2n3o4p", "author": "StressFreeZone", "content": "Let's break the stigma around mental health." },
+      { "id": "m3n4o5p", "author": "MindfulLife123", "content": "Great article! We should prioritize self-care." }
+    ]
+  },
+  {
+    "id": "q7r8s9t",
+    "title": "Exploring Exoplanets: The Search for Habitable Worlds",
+    "content": "Join astronomers on a journey to distant stars as they hunt for exoplanets with conditions suitable for life. Discover the latest findings and the potential for extraterrestrial habitats.",
+    "category": "Astronomy",
+    "comments_count": 18,
+    "views_count": 1500,
+    "author": { "name": "StarGazer" },
+    "createdAt": "March 30, 2024",
+    "imageUrl": "https://exoplanets.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaU1NIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a05156c38e2d69483b2ea46cd47471f5d263883b/fig3-searchinghabwrlds_s.jpg",
+    "views": 7000,
+    "comments": [
+      { "id": "u1v2w3x", "author": "SpaceExplorer99", "content": "The cosmos never ceases to amaze!" },
+      { "id": "u2v3w4x", "author": "AstroGeek456", "content": "I dream of a day when we find another Earth." },
+      { "id": "u3v4w5x", "author": "ScienceEnthusiast", "content": "The search for exoplanets is a scientific adventure!" }
+    ]
+  },
+  {
+    "id": "y1z2a3b",
+    "title": "Artificial Intelligence in Healthcare",
+    "content": "Explore how artificial intelligence is revolutionizing the healthcare industry. Learn about AI-powered diagnostics, patient care, and the potential for improving medical outcomes.",
+    "category": "Healthcare Technology",
+    "comments_count": 12,
+    "views_count": 900,
+    "author": { "name": "MedTechPro" },
+    "createdAt": "April 15, 2024",
+    "imageUrl": "https://online.stanford.edu/sites/default/files/styles/embedded_large/public/2020-08/artificial-intelligence-in-healthcare-MAIN.jpg?itok=uRNflQFw",
+    "views": 4000,
+    "comments": [
+      { "id": "c1d2e3f", "author": "HealthTechInnovator", "content": "AI has immense potential in healthcare!" },
+      { "id": "c2d3e4f", "author": "MedicineAdvocate", "content": "This is the future of medicine." },
+      { "id": "c3d4e5f", "author": "AIHealthEnthusiast", "content": "Exciting times for healthcare innovation!" }
+    ]
+  }
+]

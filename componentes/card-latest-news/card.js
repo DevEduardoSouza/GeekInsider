@@ -3,7 +3,16 @@ async function getDataLatestNews() {
   const data = await reponse.json();
   return data;
 }
+async function getDataMostViewed() {
+  const reponse = await fetch("data/mostViewed.json");
+  const data = await reponse.json();
+  return data;
+}
+
 const dataLatestNews = getDataLatestNews();
+const dataMostViewed = getDataMostViewed();
+
+
 
 const htmlCard = {
   getElement(element) {
@@ -25,8 +34,7 @@ const htmlCard = {
 };
 
 const createPost = {
-  container(data) {
-    const containerLatestNews = htmlCard.getElement(".content-latest-news");
+  container(data, element) {
     const postContainer = htmlCard.createElementAndClass(
       "div",
       "post",
@@ -65,15 +73,23 @@ const createPost = {
     
     `;
 
-    containerLatestNews.appendChild(postContainer);
+    element.appendChild(postContainer);
   },
 };
 
+const containerLatestNews = htmlCard.getElement(".content-latest-news");
+const containerMostViewed = htmlCard.getElement(".container-aside-ln");
+
 async function init() {
   const dataLatestNews = await getDataLatestNews();
+  const dataMostViewed = await getDataMostViewed();
 
   dataLatestNews.map((data) => {
-    createPost.container(data);
+    createPost.container(data, containerLatestNews);
+  });
+
+  dataMostViewed.map((data) => {
+    createPost.container(data, containerMostViewed);
   });
 }
 

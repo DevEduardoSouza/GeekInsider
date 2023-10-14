@@ -50,4 +50,7 @@ ul, li{
 .hide{
   display: flex;
 }
+.loading{
+  display: none;
+}
 /*::::::::::-> END Configurações gerais <-::::::::::*/

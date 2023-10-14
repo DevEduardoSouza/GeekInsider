@@ -291,8 +291,14 @@ let carouselInterval;
 // Estado do Carousel
 const stateCarousel = {
   page: 1,
-  totalPosts: 5,
+  totalPosts: 8,
   sleep: 5000,
+  verificar() {
+    this.totalPosts =
+      this.totalPosts > dataAnimeNews.length
+        ? (this.totalPosts = dataAnimeNews.length)
+        : this.totalPosts;
+  },
 };
 
 // Selecionar os posts
@@ -344,6 +350,7 @@ carouselInterval = setInterval(() => {
 // Mundança de estado
 const postsCarousel = {
   update() {
+    stateCarousel.verificar();
     const state = stateCarousel.page - 1;
 
     const img = html.getElement(".carousel-content .container-link-post img");
@@ -398,7 +405,6 @@ const toggleTheme = {
 /*::::::::::-> Funções de inicializar e atualizar<-::::::::::*/
 const update = () => {
   postsCarousel.update();
-  console.log(stateCarousel.page);
 };
 
 function init() {

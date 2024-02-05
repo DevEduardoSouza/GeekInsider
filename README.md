@@ -2,7 +2,7 @@
 
 Bem-vindo ao GeekInsider, um projeto de blog de notícias voltado para a cultura geek, desenvolvido como parte das aulas de Programação Web.
 
-![Imagem](imgs/img-projeto.png)
+![Imagem](imgs/img-projeto.jpeg)
 - link do site em desenvolvimento: <a href="https://geek-insider.netlify.app">Aqui</a>
 
 ## Tecnologias Utilizadas

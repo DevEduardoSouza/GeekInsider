@@ -307,7 +307,7 @@ const filterPosts = dataAnimeNews.slice(
   stateCarousel.totalPosts
 );
 
-// Controles de mundança
+// Controles de mudança
 const controls = {
   next() {
     stateCarousel.page++;
@@ -347,7 +347,7 @@ carouselInterval = setInterval(() => {
   update();
 }, stateCarousel.sleep);
 
-// Mundança de estado
+// Mudança de estado
 const postsCarousel = {
   update() {
     stateCarousel.verificar();

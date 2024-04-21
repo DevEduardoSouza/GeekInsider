@@ -1,0 +1,12 @@
+{
+  "name": "geekinsider",
+  "version": "1.0.0",
+  "description": "Bem-vindo ao GeekInsider, um projeto de blog de notícias voltado para a cultura geek, desenvolvido como parte das aulas de Programação Web.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
